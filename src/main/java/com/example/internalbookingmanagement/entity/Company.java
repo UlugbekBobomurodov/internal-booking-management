@@ -34,5 +34,6 @@ public class Company extends AbstractEntity {
     @JoinColumn(name = "bank_details_id")
     private BankDetails bankDetailsId;
 
+    //fast and furious
 
 }
