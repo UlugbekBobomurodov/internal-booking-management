@@ -15,5 +15,6 @@ import java.util.UUID;
 @NoArgsConstructor
 public class Request extends AbstractEntity {
     private String status;
+
     private UUID orderId;
 }
