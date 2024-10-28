@@ -1,7 +1,5 @@
 package com.example.internalbookingmanagement.entity;
 
-import com.example.internalbookingmanagement.entity.AbstractEntity;
-import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.OneToOne;
@@ -10,19 +8,13 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.util.UUID;
-
 @Entity
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Employee extends AbstractEntity {
+public class Employee extends BaseUser {
 
-    private String username;
-    private String password;
-    private String email;
-    private String phone;
     private String photo;
 
     @OneToOne

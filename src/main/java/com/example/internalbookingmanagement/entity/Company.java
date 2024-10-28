@@ -1,6 +1,5 @@
 package com.example.internalbookingmanagement.entity;
 
-import com.example.internalbookingmanagement.entity.AbstractEntity;
 import jakarta.persistence.Entity;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.OneToOne;
@@ -9,8 +8,6 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-
-import java.util.UUID;
 
 @Entity
 @Getter
@@ -34,6 +31,5 @@ public class Company extends AbstractEntity {
     @JoinColumn(name = "bank_details_id")
     private BankDetails bankDetailsId;
 
-    //fast and furious
 
 }
